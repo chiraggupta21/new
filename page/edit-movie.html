@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+*{
+margin: 0;
+padding:0;
+}
+footer
+{
+position: absolute;
+bottom: 0;
+background-color: #BFBFBF;
+width: 100%;
+height: 50px;
+}
+header{
+display: inline-block;
+background-color: #315496;
+width: 100%;
+height: 50px;
+}
+
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 130px;
+  margin-top:13px;
+  height: 10px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+</style>
+</head>
+<body>
+<header>
+<span style="color: white;font-size: 30px;">Movie Cruiser</span>
+
+<img src="">
+<a href="" style="float:right;color: white;">Movie</a>
+<a href="" style="float:right;color: white;">favorites</a>
+</header>
+<br>
+<div style="margin:60px">
+<h3>Edit Movie</h3>
+<br>
+<p>Title</p>
+<input type="text" style="width: 500px">
+
+<div class="row">
+  <div class="column">
+    <p>Gross($)</p>
+    <input type="text" style="width:100px">
+  </div>
+  <div class="column">
+    <p>Active</p>
+    <input type="radio" name="age" value="30">Yes<br>
+    <input type="radio" name="age" value="60"  >No<br>
+    
+  </div>
+  <div class="column" >
+    <p>Date of launch</p>
+    <input type="text" style="width:100px">
+  </div>
+  <div class="column">
+    <p>Genre</p>
+    <select>
+  <option value="volvo">Superhero</option>
+  <option value="saab">Science Fiction</option>
+  <option value="fiat">Super hero</option>
+  <option value="audi">Romance</option>
+  <option value="saab">Comedy</option>
+  <option value="fiat">Adventure</option>
+  <option value="audi">Thriller</option>
+</select>
+  </div>
+</div>
+<br><br><br>
+<input type="checkbox" name="vehicle" value="Bike" style="margin-top: 5px">Has Teaser<br>
+<button type="button" style="margin-top: 20px; padding: 10px 32px;background-color: blue;color: white;">Save</button>
+
+
+</div>
+<footer >
+<h3>Copyright 2019</h3>
+</footer>
+</body>
+</html>
